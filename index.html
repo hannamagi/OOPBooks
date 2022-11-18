@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-image: url('https://www.celebrity-cutouts.com/wp-content/uploads/2020/02/nicki-minaj-yellow-dress-cardboard-cutout.png');
+    }
+    tr {
+      border: 1px solid black;
+      background-color: lightblue;
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>BOOKS OP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+</head>
+<body>
+<h1 style="margin-bottom: 40px;" >Add Book</h1>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="title" type="text" required/>
+        <label for="title">Title</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="author" type="text" required/>
+        <label for="author">Author</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="isbn" type="number" required/>
+        <label for="isbn">ISBN#</label>
+      </div>
+    </div>
+    <a href="#" class="btn" id="submit-book" style="width: 100%; margin-bottom: 20px">Submit</a>
+  </form>
+</div>
+<div class="book-list">
+  <table>
+    <tr>
+      <td><b>Title</b></td>
+      <td><b>Author</b></td>
+      <td><b>ISBN#</b></td>
+    </tr>
+  </table>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="classes/Books.js"></script>
+<script src="classes/LS.js"></script>
+<script src="classes/UI.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
